@@ -113,10 +113,28 @@
                 <li class="list-group-item btn btn-default" data-toggle="modal" data-target="#shopping_details">Einkaufen</li>
               </ul>
             </div>
-
+            <div class="col-md-2">
+              <h4>Bathroom</h4>
+              <!-- Simple Sortable List -->
+              <ul id="bathroomList" class="list-group">
+                <li class="list-group-item btn btn-default">Klo putzen</li>
+                <li class="list-group-item btn btn-default">Badewanne putzen</li>
+                <li class="list-group-item btn btn-default">Boden wischen</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h4>Living room</h4>
+              <!-- Simple Sortable List -->
+              <ul id="livingList" class="list-group">
+                <li class="list-group-item btn btn-default">Fenster putzen</li>
+                <li class="list-group-item btn btn-default">Staub saugen</li>
+              </ul>
+            </div>
             <script>
               // Simple list
-              Sortable.create(kitchenList, { /* options */ });
+              Sortable.create(kitchenList, {  });
+              Sortable.create(bathroomList, { });
+              Sortable.create(livingList, { });
             </script>
           </div>
         </div>
