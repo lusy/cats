@@ -143,18 +143,39 @@
             </div>
             <div class="modal-body">
               <p>One fine body...</p>
-              <div class="btn-group btn-group-lg btn-toolbar">
-                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Priority <span class="fa fa-caret-down"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li>
-                    <a href="#">- 1 Overdue</a>
-                    <a href="#">0 Today</a>
-                    <a href="#">1 Tomorrow</a>
-                    <a href="#">2 Day after tomorrow</a>
-                  </li>
-                </ul>
-                  <input type="checkbox">
+              <div class="btn-group btn-group-lg">
+                <div>
+                  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Priority <span class="fa fa-caret-down"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li>
+                      <a href="#">- 1 Overdue</a>
+                      <a href="#">0 Today</a>
+                      <a href="#">1 Tomorrow</a>
+                      <a href="#">2 Day after tomorrow</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
                   <span>Daily Target</span>
+                  <input type="checkbox" class="checkbox-inline">
+                </div>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
+                  </label>
+                  <label class="btn btn-success">
+                    <input type="checkbox" autocomplete="off"> Checkbox 2
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="checkbox" autocomplete="off"> Checkbox 3
+                  </label>
+                </div>
+              </div>
+              <div>
+                <label class="btn btn-success">
+                  Done
+                  <input type="checkbox" autocomplete="off">
+                </label>
               </div>
               <div class="modal-footer">
                 <a class="btn btn-default" data-dismiss="modal">Close</a>
@@ -193,6 +214,5 @@
         </div>
       </div>
     </div>
-  
 
 </body></html>
