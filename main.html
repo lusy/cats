@@ -48,67 +48,46 @@
           <p>I'm in Section 1.</p>
           <div class="col-md-2">
             <h4>Overdue</h4>
-            <ul class="list-group">
+            <ul id="overdueList" class="list-group">
               <li class="list-group-item btn btn-default">Katzenklo putzen</li>
-              <li class="list-group-item">
-                <a data-toggle="modal" data-target="#wipe_kitchen_floor_details" type="button">Küche wischen</a>
-              </li>
+              <li class="list-group-item btn btn-default">Küche wischen</li>
               <li class="list-group-item btn btn-default" data-toggle="modal" data-target="#shopping_details">Einkaufen</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
             </ul>
           </div>
-            <div class="col-md-2">
-              <h4>Today</h4>
-              <ul class="list-group">
-                <li class="list-group-item btn btn-default">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-            </div>
-            <div class="col-md-2">
-              <h4>Tomorrow</h4>
-              <ul class="list-group">
-                <li class="list-group-item btn btn-default">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-            </div>
-            <div class="col-md-2">
-              <h4>Day after tomorrow</h4>
-              <ul class="list-group">
-                <li class="list-group-item btn btn-default">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-            </div>
-            <div class="col-md-2">
-              <h4>2 days after tomorrow</h4>
-              <ul class="list-group">
-                <li class="list-group-item btn btn-default">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-            </div>
-            <div class="col-md-2">
-              <h4>3 days after tomorrow</h4>
-              <ul class="list-group">
-                <li class="list-group-item btn btn-default">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-            </div>
+          <div class="col-md-2">
+            <h4>Today</h4>
+            <ul id="todayList" class="list-group">
+              <li class="list-group-item btn btn-default">Herd sauber machen</li>
+              <li class="list-group-item btn btn-default">Aufstriche machen</li>
+            </ul>
           </div>
+          <div class="col-md-2">
+            <h4>Tomorrow</h4>
+            <ul id="tomorrowList"class="list-group">
+              <li class="list-group-item btn btn-default">Müll wegbringen</li>
+              <li class="list-group-item btn btn-default">Katze füttern</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Day after tomorrow</h4>
+          </div>
+          <div class="col-md-2">
+            <h4>2 days after tomorrow</h4>
+            <ul id="after2List" class="list-group">
+              <li class="list-group-item btn btn-default">Fenster putzen</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>3 days after tomorrow</h4>
+          </div>
+          <script>
+            // Simple list
+            Sortable.create(overdueList, { /* options */ });
+            Sortable.create(todayList, { /* options */ });
+            Sortable.create(tomorrowList, { /* options */ });
+            Sortable.create(after2List, { /* options */ });
+          </script>
+        </div>
           <div class="tab-pane" id="panel-900028">
             <p>Howdy, I'm in Section 2.</p>
             <a data-toggle="modal" data-target="#task_details" type="button" class="btn btn-primary btn-sm">Click me</a>
@@ -118,18 +97,18 @@
             <div class="col-md-2">
               <h4>Kitchen</h4>
               <!-- Simple Sortable List -->
-              <ul id="simpleList" class="list-group">
-                <li class="list-group-item">Boden wischen</li>
-                <li class="list-group-item">Abendessen kochen</li>
-                <li class="list-group-item">Aufstriche machen</li>
-                <li class="list-group-item">Herd sauber machen</li>
+              <ul id="kitchenList" class="list-group">
+                <li class="list-group-item btn btn-default">Boden wischen</li>
+                <li class="list-group-item btn btn-default">Abendessen kochen</li>
+                <li class="list-group-item btn btn-default">Aufstriche machen</li>
+                <li class="list-group-item btn btn-default">Herd sauber machen</li>
                 <li class="list-group-item btn btn-default" data-toggle="modal" data-target="#shopping_details">Einkaufen</li>
               </ul>
             </div>
 
             <script>
               // Simple list
-              Sortable.create(simpleList, { /* options */ });
+              Sortable.create(kitchenList, { /* options */ });
             </script>
           </div>
         </div>
@@ -170,6 +149,9 @@
                     <input type="checkbox" autocomplete="off"> Checkbox 3
                   </label>
                 </div>
+              </div>
+              <div>
+                <i class="fa fa-4x fa-fw pull-left fa-bicycle"></i>
               </div>
               <div>
                 <label class="btn btn-success">
