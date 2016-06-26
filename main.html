@@ -70,6 +70,9 @@
           </div>
           <div class="col-md-2">
             <h4>Day after tomorrow</h4>
+            <ul id="after1List" class="list-group">
+              <li class="list-group-item btn btn-default"></li>
+            </ul>
           </div>
           <div class="col-md-2">
             <h4>2 days after tomorrow</h4>
@@ -79,13 +82,18 @@
           </div>
           <div class="col-md-2">
             <h4>3 days after tomorrow</h4>
+            <ul id="after3List" class="list-group">
+              <li class="list-group-item btn btn-default"></li>
+            </ul>
           </div>
           <script>
             // Simple list
-            Sortable.create(overdueList, { /* options */ });
-            Sortable.create(todayList, { /* options */ });
-            Sortable.create(tomorrowList, { /* options */ });
-            Sortable.create(after2List, { /* options */ });
+            Sortable.create(overdueList, { group: 'calender' });
+            Sortable.create(todayList, { group: 'calender' });
+            Sortable.create(tomorrowList, { group: 'calender' });
+            Sortable.create(after1List, { group: 'calender' });
+            Sortable.create(after2List, { group: 'calender' });
+            Sortable.create(after3List, { group: 'calender' });
           </script>
         </div>
           <div class="tab-pane" id="panel-900028">
