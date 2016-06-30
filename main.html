@@ -206,7 +206,9 @@
                     </div>
                   </div>
                   <form class='form-inline'>
-                    <a href='#panel-2-wer' data-toggle='tab'><i class="fa fa-4x fa-fw pull-left fa-bicycle"></i></a>
+                    <a href='#panel-2-wer' data-toggle='tab' id='user-icon'><i class="fa fa-4x fa-fw pull-left fa-bicycle"></i></a>
+                    <a href='#panel-3-info' data-toggle='tab' id='info-icon'><i class="fa fa-4x fa-fw pull-left fa-file-text"></i></a>
+                    <!--
                     <label class="btn btn-success">
                       Who
                       <input type="checkbox" autocomplete="off">
@@ -215,6 +217,7 @@
                       Info
                       <input type="checkbox" autocomplete="off">
                     </label>
+                    -->
                     <label class="btn btn-success">
                       Done
                       <input type="checkbox" autocomplete="off">
@@ -236,10 +239,13 @@
                     </ul>
                     <div class="tab-content">
                       <div class="tab-pane active" id="panel-1-statistik">
+                        <p>statistik</p>
                       </div>
                       <div class="tab-pane" id="panel-2-wer">
+                        <p>who</p>
                       </div>
                       <div class="tab-pane" id="panel-3-info">
+                        <p>info</p>
                       </div>
                     </div>
                 </div>
@@ -281,5 +287,14 @@
         </div>
       </div>
     </div>
+    <script>
+//      $(document).ready(function(){
+//        activaTab('panel-1-statistik');
+//      });
 
+      document.getElementById("user-icon").addEventListener("click", activaTab);
+      function activaTab(tab){
+        $('.nav-tabs a[href="#' + tab + '"]').tab('show');
+      };
+    </script>
 </body></html>
