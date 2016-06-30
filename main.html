@@ -156,48 +156,98 @@
               <h4 class="modal-title">Shopping modal</h4>
             </div>
             <div class="modal-body">
-              <p>One fine body...</p>
-              <div class="btn-group btn-group-lg">
-                <div>
-                  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Priority <span class="fa fa-caret-down"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li>
-                      <a href="#">- 1 Overdue</a>
-                      <a href="#">0 Today</a>
-                      <a href="#">1 Tomorrow</a>
-                      <a href="#">2 Day after tomorrow</a>
-                    </li>
-                  </ul>
+              <div class="container-fluid">
+                <div class="col-md-6">
+                  <div class="btn-group btn-group-lg">
+                    <div>
+                      <form class='form-inline'>
+                        <fieldset class='form-group'>
+                          <label for='priority'>Priority</label>
+                          <select id='interval' class='form-control'>
+                            <option>-1 overdue</option>
+                            <option>0 today</option>
+                            <option>1 tomorrow</option>
+                            <option>2 day after tomorrow</option>
+                          </select>
+                        </fieldset>
+                      </form>
+                      <form class='form-inline'>
+                        <fieldset class='form-group'>
+                          <label for='interval'>Interval</label>
+                          <input type='number' class='form-contol' id='interval-nr' value='7'>
+                          <select id='interval' class='form-control'>
+                            <option>days</option>
+                            <option>weeks</option>
+                            <option>months</option>
+                          </select>
+                        </fieldset>
+                      </form>
+                    </div>
+                    <div class='checkbox'>
+                      <label>
+                        <input type="checkbox" class="checkbox-inline"> Daily Target
+                      </label>
+                    </div>
+                    <div class='checkbox'>
+                      <label>
+                        <input type="checkbox" class="checkbox-inline" checked> Task active
+                      </label>
+                    </div>
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-secondary active">
+                        <input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
+                      </label>
+                      <label class="btn btn-success">
+                        <input type="checkbox" autocomplete="off"> Checkbox 2
+                      </label>
+                      <label class="btn btn-secondary">
+                        <input type="checkbox" autocomplete="off"> Checkbox 3
+                      </label>
+                    </div>
+                  </div>
+                  <form class='form-inline'>
+                    <a href='#panel-2-wer' data-toggle='tab'><i class="fa fa-4x fa-fw pull-left fa-bicycle"></i></a>
+                    <label class="btn btn-success">
+                      Who
+                      <input type="checkbox" autocomplete="off">
+                    </label>
+                    <label class="btn btn-success">
+                      Info
+                      <input type="checkbox" autocomplete="off">
+                    </label>
+                    <label class="btn btn-success">
+                      Done
+                      <input type="checkbox" autocomplete="off">
+                    </label>
+                  </form>
                 </div>
-                <div>
-                  <span>Daily Target</span>
-                  <input type="checkbox" class="checkbox-inline">
+                <div class='col-md-6'>
+                  <div class="tabbable" id="tabs-shopping-modal">
+                    <ul class="nav nav-tabs">
+                      <li class="active">
+                        <a href="#panel-1-statistik" data-toggle="tab">Statistik</a>
+                      </li>
+                      <li>
+                        <a href="#panel-2-wer" data-toggle="tab">Wer</a>
+                      </li>
+                      <li>
+                        <a href="#panel-3-info" data-toggle="tab">Info</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="panel-1-statistik">
+                      </div>
+                      <div class="tab-pane" id="panel-2-wer">
+                      </div>
+                      <div class="tab-pane" id="panel-3-info">
+                      </div>
+                    </div>
                 </div>
-                <div class="btn-group" data-toggle="buttons">
-                  <label class="btn btn-secondary active">
-                    <input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
-                  </label>
-                  <label class="btn btn-success">
-                    <input type="checkbox" autocomplete="off"> Checkbox 2
-                  </label>
-                  <label class="btn btn-secondary">
-                    <input type="checkbox" autocomplete="off"> Checkbox 3
-                  </label>
-                </div>
               </div>
-              <div>
-                <i class="fa fa-4x fa-fw pull-left fa-bicycle"></i>
-              </div>
-              <div>
-                <label class="btn btn-success">
-                  Done
-                  <input type="checkbox" autocomplete="off">
-                </label>
-              </div>
-              <div class="modal-footer">
-                <a class="btn btn-default" data-dismiss="modal">Close</a>
-                <a class="btn btn-primary">Save changes</a>
-              </div>
+            </div>
+            <div class="modal-footer">
+              <a class="btn btn-default" data-dismiss="modal">Close</a>
+              <a class="btn btn-primary">Save changes</a>
             </div>
           </div>
         </div>
