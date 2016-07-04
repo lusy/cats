@@ -33,9 +33,6 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active">
-              <a href="#">Home<i class="fa fa-star fa-fw"></i></a>
-            </li>
             <li>
               <a href="#">Settings<i class="fa fa-2x fa-cogs fa-fw"></i></a>
             </li>
@@ -108,8 +105,36 @@
         </div>
           <div class="tab-pane" id="panel-900028">
             <p>Howdy, I'm in Section 2.</p>
-            <a data-toggle="modal" data-target="#task_details" type="button" class="btn btn-primary btn-sm">Click me</a>
-          </div>
+            <div class="col-md-3">
+              <h4>Overdue</h4>
+              <ul id="overdueList" class="list-group">
+                <li class="list-group-item btn btn-default">Katzenklo putzen</li>
+                <li class="list-group-item btn btn-default">Küche wischen</li>
+                <li class="list-group-item btn btn-default" data-toggle="modal" data-target="#shopping_details">Einkaufen</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Do it now</h4>
+              <ul id="todayList" class="list-group">
+                <li class="list-group-item btn btn-default">Herd sauber machen</li>
+                <li class="list-group-item btn btn-default">Aufstriche machen</li>
+                <li class="list-group-item btn btn-default">Müll wegbringen</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Do it soon</h4>
+              <ul id="tomorrowList"class="list-group">
+                <li class="list-group-item btn btn-default">Fenster putzen</li>
+                <li class="list-group-item btn btn-default">Katze füttern</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Do it later</h4>
+              <ul id="after1List" class="list-group">
+                <li class="list-group-item btn btn-default">Treppenhaus putzen</li>
+              </ul>
+            </div>
+            </div>
           <div class="tab-pane" id="panel-900029">
             <p>Howdy, I'm in Section 3.</p>
             <div class="col-md-2">
