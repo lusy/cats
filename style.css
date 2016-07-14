@@ -1,3 +1,7 @@
 .form-control--small {
   width: 5em !important;
 }
+
+.list-group {
+  min-height: 3em;
+}
